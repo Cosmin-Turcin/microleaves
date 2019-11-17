@@ -1,1 +1,14 @@
+// Globals
+@import './globals';
+
+// font-size
+@import './font_size';
+
+// Spacing style
+@import './spacing.scss';
+
+// Generic style
 @import './generic_classes';
+
+// App components
+@import '../../Layout/Header/style';
