@@ -15,7 +15,7 @@ const Layout = () => {
       <Router>
       <Header />
       <Switch>
-        {routes.map(({path, Component}) => <Route path={path}><Component /></Route>)}
+        {routes.map(({path, Component}) => <Route exact path={path}><Component /></Route>)}
       </Switch>
       <Footer />
       </Router>

@@ -1,0 +1,22 @@
+.HomePage {
+  .LargestProxy {
+    margin-top: calculateRem(50px);
+
+    h2 {
+      color: #3598db;
+      @include fontSize(60px);
+      line-height: 1;
+      margin-top: calculateRem(50px);
+    }
+    h3 {
+      color: #5a6c74;
+      @include fontSize(32px);
+      line-height: 1;
+      margin-top: calculateRem(20px);
+    }
+    p {
+      color: #5a6c74;
+      margin-top: calculateRem(30px);
+    }
+  }
+}

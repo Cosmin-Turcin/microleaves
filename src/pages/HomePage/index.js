@@ -1,9 +1,10 @@
 import React from 'react';
+import LargestProxy from './Sections/LargestProxy';
 
 const HomePage = () => {
   return (
-    <div>
-      HomePage
+    <div className="HomePage">
+      <LargestProxy />
     </div>
   )
 }
