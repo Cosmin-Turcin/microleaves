@@ -53,4 +53,26 @@
       margin-bottom: calculateRem(30px);
     }
   }
+
+  .UseCases {
+    margin-top: calculateRem(100px);
+
+    h2 {
+      color: #5a6c74;
+      text-align: center;
+      @include fontSize(34px);
+      font-weight: bold;
+    }
+
+    &__cases {
+      img {
+        max-width: 130px;
+        margin-top: calculateRem(70px);
+      }
+      h3 {
+        color: #5a6c74;
+        @include fontSize(21px);
+      }
+    }
+  }
 }
