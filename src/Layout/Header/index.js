@@ -7,7 +7,7 @@ import logo from '../../assets/images/Logo.svg'
 const Header = () => {
   return (
     <header className="App__header">
-      <div className="container flex-justify-content-space-between flex-align-items-center">
+      <div className="container flex flex-justify-content-space-between flex-align-items-center">
         <Navbar />
         <ClientArea className="flex-order-3 text-right hidden-xs" />
         <div className="App__logo">
