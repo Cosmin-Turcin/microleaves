@@ -1,0 +1,42 @@
+.App__footer {
+  background: #48cc83;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 130px 1920px;
+    border-color: transparent transparent #48cc83 transparent;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+
+    @media screen and (min-width: 992px) {
+      border-width: 0 0 200px 1920px;      
+    }
+  }
+
+  h2 {
+    color: #fff;
+    font-weight: bold;
+    @include fontSize(40px);
+  }
+
+  p {
+    color: #fff;
+    @include fontSize(21px);
+  }
+
+  .services {
+    img {
+      width: calculateRem(80px);
+    }
+    p {
+      color: #fff;
+      @include fontSize(24px);
+    }
+  }
+}

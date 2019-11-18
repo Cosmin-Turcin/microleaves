@@ -3,7 +3,7 @@ import illustration from '../../../assets/images/header.svg';
 
 const LargestProxy = () => {
   return (
-    <div className="LargestProxy">
+    <div className="LargestProxy p-b-xxl">
       <div className="container">
         <div className="row">
           <div className="col col-6">

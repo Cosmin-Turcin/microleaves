@@ -1,6 +1,6 @@
 .container {
   padding: 0 15px;
-  max-width: 1200px;
+  max-width: 1500px;
   width: 100%;
   margin: auto;
 }
@@ -18,12 +18,25 @@
 
 .col {
   padding: 0 15px;
+  &-8 {
+    width: 100%;
 
+    @media screen and (min-width: 768px) {      
+      max-width: 66.6%;
+    }
+  }
   &-6 {
     width: 100%;
 
     @media screen and (min-width: 768px) {      
       max-width: 50%;
+    }
+  }
+  &-4 {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {      
+      max-width: 33.3%;
     }
   }
   &-3 {
@@ -50,6 +63,9 @@
   &-justify-content {
     &-space-between {
       justify-content: space-between;
+    }
+    &-center {
+      justify-content: center;
     }
   }
 
@@ -89,6 +105,10 @@ html {
   }
 }
 
+body {
+  font-family: "Metropolis";
+}
+
 .btn {
   background: #48cc83;
   color: #fff;
@@ -108,4 +128,8 @@ html {
 
 .full-width {
   width: 100%;
+}
+
+.MainContent {
+  min-height: 150px;
 }
