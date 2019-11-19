@@ -119,6 +119,7 @@ body {
   padding: calculateRem(10px) 20px;
   border-radius: 5px;
   font-weight: bold;
+  outline: none;
 
   @include fontSize(14px);
 }

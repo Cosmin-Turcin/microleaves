@@ -1,8 +1,12 @@
 .App__footer {
-  background: #48cc83;
   position: relative;
-  padding-top: calculateRem(50px);
-  padding-bottom: calculateRem(100px);
+  background: #48cc83;
+  padding-top: calculateRem(80px);
+  padding-bottom: calculateRem(130px);
+
+  .container {
+    z-index: 1;
+  }
 
   &::before {
     content: "";
@@ -17,11 +21,13 @@
     right: 0;
 
     @media screen and (min-width: 768px) {
-      border-width: 0 0 120px 1920px;
+      border-width: 0 0 100px 1920px;
     }
-
     @media screen and (min-width: 1170px) {
-      border-width: 0 0 160px 1920px;      
+      border-width: 0 0 120px 1920px;      
+    }
+    @media screen and (min-width: 1920px) {
+      border-width: 0 0 160px 5000px;      
     }
   }
 

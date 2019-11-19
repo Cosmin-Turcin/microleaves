@@ -10,7 +10,7 @@ import iconService8 from '../../assets/images/icon-service-8.svg';
 
 const Footer = () => {
   return (
-    <footer className="App__footer p-b-xl m-t-xxl">
+    <footer className="App__footer m-t-xl">
       <div className="container">
         <div className="row">
         <div className="col col-4">

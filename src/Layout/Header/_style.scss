@@ -30,7 +30,7 @@
       margin-right: calculateRem(50px);
       @include fontSize(18px);
 
-      &.active {
+      &.active, &:hover {
         color: #48cc83;
       }
     }
@@ -77,6 +77,51 @@
       .navbar__action {
         display: block;
         cursor: pointer;
+      }
+    }
+  }
+  .blue-effect {
+    position: relative;
+    padding-left: 50px;
+    overflow: hidden;
+
+    .icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 30px;
+      height: 100%;
+      background: #3598db;
+      transition: width 0.5s;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 40px 10px 0 0;
+        border-color: #3598db transparent transparent transparent;
+      }
+
+      img {
+        position: absolute;
+        top: calc(50% - 7.5px);
+        left: 10px;
+      }
+    }
+
+    .text {
+      position: relative;
+      z-index: 1;
+    }
+
+    &:hover {
+      .icon {
+        width: 100%;
       }
     }
   }

@@ -23,7 +23,7 @@
   }
 
   .Designed {
-    margin-top: calculateRem(80px);
+    margin-top: calculateRem(40px);
     background: #fafafa;
     position: relative;
 
@@ -40,11 +40,14 @@
       right: 0;
 
       @media screen and (min-width: 768px) {
-        border-width: 0 0 120px 1920px;
+        border-width: 0 0 100px 1920px;
       }
 
       @media screen and (min-width: 1170px) {
-        border-width: 0 0 160px 1920px;      
+        border-width: 0 0 120px 1920px;      
+      }
+      @media screen and (min-width: 1920px) {
+        border-width: 0 0 160px 5000px;      
       }
     }
 
@@ -53,7 +56,7 @@
       text-align: center;
       @include fontSize(34px);
       font-weight: bold;
-      margin-bottom: calculateRem(70px);
+      margin-bottom: calculateRem(40px);
     }
 
     h3 {
@@ -65,13 +68,21 @@
   }
 
   .UseCases {
-    margin-top: calculateRem(100px);
+    margin-top: calculateRem(120px);
 
     .slick-slider {
       margin-top: 50px;
       .slick-arrow {
         &::before {
           color: black;
+        }
+      }
+      .text-center {
+        max-width: 200px;
+
+        h3 {
+          font-size: 14px;
+          margin-top: 15px;
         }
       }
     }
@@ -86,7 +97,7 @@
     &__cases {
       .image {
         min-height: 130px;
-        margin-top: calculateRem(70px);
+        margin-top: calculateRem(50px);
         display: flex;
         align-items: center;
         justify-content: center;
