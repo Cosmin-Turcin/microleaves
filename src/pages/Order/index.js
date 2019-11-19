@@ -2,7 +2,7 @@ import React from 'react';
 
 const Order = () => {
   return (
-    <div>
+    <div className="text-center">
       Order, Coming soon!
     </div>
   )

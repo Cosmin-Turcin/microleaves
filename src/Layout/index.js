@@ -14,7 +14,7 @@ const Layout = () => {
     <div className="App">
       <Router>
       <Header />
-      <div className="MainContent flex flex-justify-content-center p-t-md">
+      <div className="MainContent p-t-md">
         <Switch>
           {routes.map(({path, Component}) => <Route exact path={path}><Component /></Route>)}
         </Switch>

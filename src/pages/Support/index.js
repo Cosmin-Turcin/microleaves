@@ -2,7 +2,7 @@ import React from 'react';
 
 const Support = () => {
   return (
-    <div>
+    <div className="text-center">
       Support, Coming soon!
     </div>
   )

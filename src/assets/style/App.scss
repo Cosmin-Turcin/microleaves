@@ -11,6 +11,13 @@
 @import './generic_classes';
 
 // App components
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
 @import '../../Layout/Header/style';
 @import '../../Layout/Footer/style';
 @import '../../pages/HomePage/style';

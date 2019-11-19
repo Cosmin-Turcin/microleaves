@@ -61,6 +61,15 @@
   .UseCases {
     margin-top: calculateRem(100px);
 
+    .slick-slider {
+      margin-top: 50px;
+      .slick-arrow {
+        &::before {
+          color: black;
+        }
+      }
+    }
+
     h2 {
       color: #5a6c74;
       text-align: center;
