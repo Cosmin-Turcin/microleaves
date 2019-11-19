@@ -4,6 +4,8 @@
 
     h2 {
       color: #3598db;
+      font-weight: bold;
+      line-height: 1.2;
       @include fontSize(60px);
       line-height: 1;
       margin-top: calculateRem(50px);
@@ -11,7 +13,7 @@
     h3 {
       color: #5a6c74;
       @include fontSize(32px);
-      line-height: 1;
+      line-height: 1.1;
       margin-top: calculateRem(20px);
     }
     p {
@@ -21,7 +23,7 @@
   }
 
   .Designed {
-    margin-top: calculateRem(120px);
+    margin-top: calculateRem(80px);
     background: #fafafa;
     position: relative;
 
@@ -31,14 +33,18 @@
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 0 0 130px 1920px;
+      border-width: 0 0 60px 1920px;
       border-color: transparent transparent #fafafa transparent;
       position: absolute;
       bottom: 100%;
       right: 0;
 
-      @media screen and (min-width: 992px) {
-        border-width: 0 0 200px 1920px;      
+      @media screen and (min-width: 768px) {
+        border-width: 0 0 120px 1920px;
+      }
+
+      @media screen and (min-width: 1170px) {
+        border-width: 0 0 160px 1920px;      
       }
     }
 
@@ -47,14 +53,14 @@
       text-align: center;
       @include fontSize(34px);
       font-weight: bold;
-      margin-bottom: calculateRem(50px);
+      margin-bottom: calculateRem(70px);
     }
 
     h3 {
       color: #5a6c74;
       text-align: center;
       @include fontSize(21px);
-      margin-bottom: calculateRem(30px);
+      margin-bottom: calculateRem(70px);
     }
   }
 
@@ -78,12 +84,20 @@
     }
 
     &__cases {
+      .image {
+        min-height: 130px;
+        margin-top: calculateRem(70px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
       img {
         max-width: 130px;
-        margin-top: calculateRem(70px);
       }
       h3 {
         color: #5a6c74;
+        margin-top: 10px;
         @include fontSize(21px);
       }
     }

@@ -31,35 +31,51 @@ const UseCases = () => {
         <div className="hidden-xs">
           <div className="row UseCases__cases">
             <div className="col col-3 text-center">
-              <img src={case1} alt="" />
+              <div className="image">
+                <img src={case1} alt="" />
+              </div>
               <h3>Price Comparation</h3>
             </div>
             <div className="col col-3 text-center">
-              <img src={case2} alt="" />
+              <div className="image">
+                <img src={case2} alt="" />
+              </div>
               <h3>Ad Verification</h3>
             </div>
             <div className="col col-3 text-center">
-              <img src={case3} alt="" />
+              <div className="image">
+                <img src={case3} alt="" />
+              </div>
               <h3>Sales Intelligence</h3>
             </div>
             <div className="col col-3 text-center">
-              <img src={case4} alt="" />
+              <div className="image">
+                <img src={case4} alt="" />
+              </div>
               <h3>Brand Protection</h3>
             </div>
             <div className="col col-3 text-center">
-              <img src={case5} alt="" />
+              <div className="image">
+                <img src={case5} alt="" />
+              </div>
               <h3>Web Property Testing</h3>
             </div>
             <div className="col col-3 text-center">
-              <img src={case6} alt="" />
+              <div className="image">
+                <img src={case6} alt="" />
+              </div>
               <h3>SEO</h3>
             </div>
             <div className="col col-3 text-center">
-              <img src={case7} alt="" />
+              <div className="image">
+                <img src={case7} alt="" />
+              </div>
               <h3>Online Shopping: Sneakers & Tickets</h3>
             </div>
             <div className="col col-3 text-center">
-              <img src={case8} alt="" />
+              <div className="image">
+                <img src={case8} alt="" />
+              </div>
               <h3>Web Scaping</h3>
             </div>
           </div>

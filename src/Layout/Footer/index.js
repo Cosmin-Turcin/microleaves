@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="row">
         <div className="col col-4">
           <h2 class="m-t-md m-b-md">Service Quality As A Core Value </h2>
-          <p>Lorem impsum dolor sit amen hic major et empera</p>
+          <p className="m-b-lg">Lorem impsum dolor sit amen hic major et empera</p>
         </div>  
         <div className="col col-8">
           <div className="services row">

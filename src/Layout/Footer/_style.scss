@@ -1,6 +1,8 @@
 .App__footer {
   background: #48cc83;
   position: relative;
+  padding-top: calculateRem(50px);
+  padding-bottom: calculateRem(100px);
 
   &::before {
     content: "";
@@ -8,14 +10,18 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 0 130px 1920px;
+    border-width: 0 0 60px 1920px;
     border-color: transparent transparent #48cc83 transparent;
     position: absolute;
     bottom: 100%;
     right: 0;
 
-    @media screen and (min-width: 992px) {
-      border-width: 0 0 200px 1920px;      
+    @media screen and (min-width: 768px) {
+      border-width: 0 0 120px 1920px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      border-width: 0 0 160px 1920px;      
     }
   }
 
